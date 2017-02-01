@@ -25,7 +25,7 @@ def extract(ID, base_dir_name):
 
 	#Create Folder
 	folder_name = str(ID) + ': ' + soup.title.string[12: -13]
-	folder_name = folder_name.replace('/','-')
+	folder_name.replace('/', '//')
 	create_dir(folder_name, base_dir_name)
 
 	problem_prefix = '/contest/' + str(ID) + '/problem/'
@@ -39,12 +39,14 @@ def extract(ID, base_dir_name):
 		if current.startswith(problem_prefix) and len(current) == len(problem_prefix) + 1:
 			if current not in problems:
 				problems.append(current)
+				print('Downloading Problem ' + current[-1])
 				print_url(home + current + suffix, current[-1], base_dir_name + '/' + folder_name + '/')
 
 		#Tutorials
 		if link.text.lower().startswith('tutorial'):
 			if current not in tutorials:
 				tutorials.append(current)
+				print('Downloading ' + link.text)
 				print_url(home + current + suffix, link.text, base_dir_name + '/' + folder_name + '/')
 
 		
