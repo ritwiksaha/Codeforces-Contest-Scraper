@@ -24,9 +24,6 @@ def work():
 
 	for i in left:
 		extract(i, 'Codeforces Problemset')
-		done.append(i)
-
-	delete_file_contents(covered)
-	list_to_file(sorted(done), covered)
+		append_to_file(covered, str(i))
 
 work()
