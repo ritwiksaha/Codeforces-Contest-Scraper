@@ -11,13 +11,13 @@ Run by executing runner.py
 It is a Python3 file
 
 Requirements: 
-    Python3;�
-    Python libraries: bs4, requests, pdfkit; �
+    Python3;
+    Python libraries: bs4, requests, pdfkit; 
     Application: wkhtmltopdf
               
-    Terminal commands for requirement installation in Ubuntu:�
-      sudo pip3 install bs4�
-      sudo pip3 install requests�
+    Terminal commands for requirement installation in Ubuntu:
+      sudo pip3 install bs4
+      sudo pip3 install requests
       sudo apt-get install wkhtmltopdf
 
 Created by Ritwik Saha
