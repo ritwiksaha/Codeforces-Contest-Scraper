@@ -6,9 +6,10 @@ def create_dir(directory, path):
     if path is not '':
         path += '/'
     if not os.path.exists(path + directory):
-        print(path)
         print('Creating directory ' + directory)
         os.makedirs(path + directory)
+    else:
+        print('Directory ' + directory + ' already exists')
 
 # Creates a covered file
 def create_metafile(project_name):
