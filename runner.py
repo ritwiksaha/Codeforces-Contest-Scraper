@@ -27,5 +27,8 @@ def work():
 			extract(i, 'Codeforces Problemset')
 			append_to_file(covered, str(i))
 		except:
-			pass
+			print('Failed to download Contest ' + str(i))
+
+	print('Finished')
+	
 work()
