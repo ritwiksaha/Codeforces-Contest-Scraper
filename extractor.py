@@ -12,7 +12,6 @@ suffix = '?locale=en'
 def extract(ID, base_dir_name):
 	
 	contest_base_url = prefix + str(ID) + suffix
-	print(contest_base_url)
 	base_page = requests.get(contest_base_url)
 
 	#Checking whether contest exists
@@ -48,7 +47,4 @@ def extract(ID, base_dir_name):
 				tutorials.append(current)
 				print('Downloading ' + link.text)
 				print_url(home + current + suffix, link.text, base_dir_name + '/' + folder_name + '/')
-
-		
-
 	
