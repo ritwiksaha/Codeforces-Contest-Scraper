@@ -10,6 +10,8 @@ The scraper does the following:
 Run by executing runner.py
 It is a Python3 file
 
-Requirements: Python libraries: bs4, requests, os, pdfkit; Application: wkhtmltopdf
+Requirements: Python3;
+              Python libraries: bs4, requests, os, pdfkit; 
+              Application: wkhtmltopdf
 
 Created by Ritwik Saha
