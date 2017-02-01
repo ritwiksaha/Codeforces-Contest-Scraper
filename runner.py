@@ -23,7 +23,9 @@ def work():
 	left = [i for i in range(START, END +1) if i not in done]
 
 	for i in left:
-		extract(i, 'Codeforces Problemset')
-		append_to_file(covered, str(i))
-
+		try:
+			extract(i, 'Codeforces Problemset')
+			append_to_file(covered, str(i))
+		except:
+			pass
 work()
