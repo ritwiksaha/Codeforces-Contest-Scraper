@@ -24,7 +24,7 @@ def extract(ID, base_dir_name):
 
 	#Create Folder
 	folder_name = str(ID) + ': ' + soup.title.string[12: -13]
-	folder_name.replace('/', '//')
+	folder_name = folder_name.replace('/', '-')
 	create_dir(folder_name, base_dir_name)
 
 	problem_prefix = '/contest/' + str(ID) + '/problem/'
