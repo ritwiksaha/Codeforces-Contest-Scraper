@@ -12,12 +12,14 @@ It is a Python3 file
 
 Requirements: 
     Python3;
-    Python libraries: bs4, requests, pdfkit; 
+    Python libraries: bs4, requests, pdfkit, lxml; 
     Application: wkhtmltopdf
               
     Terminal commands for requirement installation in Ubuntu:
       sudo pip3 install bs4
       sudo pip3 install requests
+      sudo pip3 install lxml
+      sudo pip3 install pdfkit
       sudo apt-get install wkhtmltopdf
 
 Created by Ritwik Saha
