@@ -32,8 +32,8 @@ def work():
 	for i in left:
 		print()
 		try:
-			extract(i, 'Codeforces Problemset')
-			append_to_file(covered, str(i))
+			if extract(i, 'Codeforces Problemset'):
+				append_to_file(covered, str(i))
 		except:
 			print('Failed to download Contest ' + str(i))
 
