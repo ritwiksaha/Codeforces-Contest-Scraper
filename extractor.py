@@ -17,7 +17,7 @@ def extract(ID, base_dir_name):
 	#Checking whether contest exists
 	if base_page.status_code != 200 or base_page.url != contest_base_url:
 		print('Contest %d does not exist' % (ID))
-		return
+		return 0
 
 	data = base_page.text
 	soup = BeautifulSoup(data, "lxml")
@@ -48,3 +48,4 @@ def extract(ID, base_dir_name):
 				print('Downloading ' + link.text)
 				print_url(home + current + suffix, link.text, base_dir_name + '/' + folder_name + '/')
 	
+	return 1
